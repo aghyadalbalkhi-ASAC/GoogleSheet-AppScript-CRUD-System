@@ -1,0 +1,56 @@
+<h4>الصفحة الخاصة بالبحث</h4>
+
+
+<div class="form-group">
+
+<div class="input-group mb-3">
+  <input type="text" class="form-control" id="searchInput" placeholder="ادخل اسم العميل أو رقم الاثبات الخاص به">
+  <span class="input-group-text" id="searchCounter"></span>
+</div>
+
+
+</div>
+
+
+  <table class="table table-hover table-bordered table-sm">
+  <thead>
+    <tr>
+      <th scope="col">نوع النشاط</th>
+      <th scope="col">رقمه</th>
+      <th scope="col">اسم صاحب النشاط</th>
+      <th scope="col">نوع الاثبات</th>
+      <th scope="col">تاريخ الجولة</th>
+      <th scope="col">الجوال</th>
+      <th scope="col">الملاحظات</th>
+      <th scope="col">اسماء المراقبين</th>
+      <th scope="col">تعديل</th>
+      <th scope="col">حذف</th>
+    </tr>
+  </thead>
+  <tbody id="searchResults">
+
+  </tbody>
+</table>
+
+
+<template id='rowTemplate'>
+
+    <tr class = "result-box">
+      <td class = "typeofactivity"></td>
+      <td class = "ownerName"></td>
+      <td class = "idtype"></td>
+      <td class = "idnum"></td>
+      <td class = "recordDate"></td>
+      <td class = "telnum"></td>
+      <td class = "notes"></td>
+      <td class = "namesofobservers"></td>
+      <td class="text-center"><button type="button" class="btn btn-outline-info edit-button">تعديل</button></td>
+      <td class="text-center"><button type="button" class="btn btn-outline-danger delete-button">حذف</button></td>
+    </tr>
+
+</template>
+
+
+
+
+
